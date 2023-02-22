@@ -1,0 +1,593 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  font-family: Roboto;
+  background-color: #476884;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  text-align: center;
+  -webkit-position: sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #273541;
+  margin: 20px 0px;
+  box-shadow: 0px 2px 3px black;
+  z-index: 1;
+}
+nav li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+  list-style-position: outside;
+  width: 15%;
+  position: relative;
+}
+nav li a {
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-shadow: 1px 2px 5px black;
+}
+nav li a:hover {
+  background-color: #476884;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.active {
+  background-color: #476884;
+}
+.logo {
+  margin-left: 5%;
+  color: white;
+  text-shadow: 2px 3px 8px black;
+  font-size: 62px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.logo2 {
+  color: #181d23;
+  text-shadow: 1px 2px 5px black;
+  font-size: 62px;
+  font-weight: bold;
+  font-style: italic;
+}
+.banner {
+  display: block;
+  margin: auto;
+  width: 500px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.opis {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.ovde {
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+.kontakt {
+  max-width: 40%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0px;
+  text-align: center;
+}
+.kontakt h1,
+.rezervacija h1 {
+  color: white;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+}
+.rezervacija p {
+  font-size: 1.3em;
+  color: white;
+}
+.kontakt label {
+  font-style: italic;
+}
+.kontakt div {
+  text-align: center;
+  background-color: #0e0e0e;
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: white;
+  font-size: 150%;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.rezervacija {
+  max-width: 40%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0px;
+  text-align: center;
+}
+.rezervacija div {
+  text-align: center;
+  background-color: #0e0e0e;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.1em;
+  color: white;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.radio-dugme {
+  text-align: center;
+  background-color: #0e0e0e;
+  color: white;
+}
+#imefilma {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 2px solid #1c51c2;
+  box-sizing: border-box;
+  text-align: center;
+}
+input {
+  text-align: center;
+}
+input:invalid {
+  border: red solid 2px !important;
+}
+input[type="email"],
+input[type="number"],
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  font-size: 80%;
+  padding: 10px;
+  border: 2px solid #1c51c2;
+  box-sizing: border-box;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  font-size: 80%;
+  padding: 10px;
+  border: 2px solid #1c51c2;
+  box-sizing: border-box;
+}
+button {
+  font-size: 2em;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+input[type="submit"] {
+  font-size: 2em;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+table,
+th,
+td {
+  margin: auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+  font-size: 1.2em;
+  padding: 20px 50px;
+}
+.content {
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: rgba(210, 210, 211, 0.15);
+  margin-bottom: 20px;
+}
+.wrapper {
+  width: 70%;
+}
+footer {
+  background-color: #273541;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+footer h5 {
+  padding: 16px 0px;
+  margin: 0;
+  color: black;
+}
+footer a {
+  color: black;
+}
+.container-napomena {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.container-napomena h1 {
+  color: red;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.container .ime {
+  max-width: 200px;
+  margin-top: 5px;
+}
+.napomena {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 20px;
+}
+.napomena-box {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+.projekcije {
+  margin-left: 10%;
+  color: white;
+}
+.container .slika {
+  width: 200px;
+  height: 275px;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+.container .slika img {
+  transform: transform 0.2s;
+}
+.container .slika img:hover {
+  transform: scale(1.2);
+}
+.container-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 30px 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+.container-horizontal a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.container-horizontal a:hover {
+  color: rgb(7, 121, 243);
+}
+.desni h3 {
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+.desni p {
+  font-size: 20px;
+  color: white;
+}
+.container-horizontal .slika {
+  width: 150px;
+  height: 225px;
+}
+.slides {
+  width: 1200px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide-container {
+  display: block;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  transform: scale(0);
+  transition-duration: 0.7s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav label {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 0.2s;
+  color: #fff;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 580px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label {
+  opacity: 0.5;
+}
+
+.nav label:hover {
+  opacity: 1;
+}
+
+.nav .next {
+  right: 0;
+}
+
+input:checked + .slide-container .slide {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label {
+  display: block;
+}
+
+.nav-dots {
+  width: 100%;
+  height: 14px;
+  position: absolute;
+  bottom: 9px;
+  display: block;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  position: relative;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 100%;
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mnav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: #273541;
+  overflow-x: hidden;
+  padding-top: 100px;
+  transition: 0.5s;
+}
+.mnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.mnav .closebtn {
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  color: white;
+  background-color: #273541;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: 2;
+}
+.mmenu {
+  display: none !important;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  color: white;
+  background-color: #273541;
+  padding: 10px;
+  font-size: 1.5em;
+  z-index: +10;
+}
+.ime {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media (max-width: 1250px) {
+  .slides {
+    width: 550px;
+    height: 250px;
+  }
+  .nav label {
+    opacity: 1;
+    font-size: 80pt;
+    line-height: 250px;
+  }
+}
+@media (max-width: 1082px) {
+  .header {
+    min-height: 100px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .navbar {
+    margin: 0;
+  }
+  .menu li a {
+    font-size: 12px;
+    padding: 20px 0;
+  }
+  .kontakt div,
+  .rezervacija div,
+  input[type="submit"],
+  button {
+    font-size: 80%;
+  }
+  table,
+  th,
+  td {
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    font-size: 1em;
+    padding: 25px 50px;
+  }
+}
+@media (max-width: 949px) {
+  .container-napomena {
+    margin: 0;
+    font-size: 16px;
+  }
+  .napomena {
+    margin-top: -50px;
+    padding-bottom: 20px;
+  }
+  table,
+  th,
+  td {
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 601px) {
+  .rezervacija {
+    max-width: 70%;
+  }
+  .banner {
+    width: 80%;
+  }
+  .content .pocetna {
+    min-height: 900px !important;
+  }
+  .mmenu {
+    display: block !important;
+  }
+  .menu {
+    display: none;
+  }
+  .opis {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .logo,
+  .logo2 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .slides {
+    width: 290px;
+    height: 150px;
+  }
+  .nav label {
+    font-size: 40pt;
+    line-height: 120px;
+  }
+  table,
+  th,
+  td {
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+    font-size: 0.8em;
+    padding: 1px 2px;
+  }
+}
+@media (max-width: 400px) {
+  .logo,
+  .logo2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}

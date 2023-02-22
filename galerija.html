@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="srb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="author" content="Nemanja Stojanov" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Bioskop <span class="logo2">FilmaxX</span></div>
+    </header>
+
+    <a href="javascript:void()" class="openbtn" onclick="openmNavSlide()"
+        ><i class="mmenu fas fa-bars"></i
+      ></a>
+    </header>
+    <div id="mNavSlide" class="mnav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closemNavSlide()"
+        ><i class="fas fa-times"></i
+      ></a>
+      <a href="index.html">Početna strana</a>
+      <a href="projekcije.html">Projekcije</a>
+      <a href="galerija.html"  class="active">Galerija</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="rezervacija.html">Rezervacija</a>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Početna strana</a></li>
+        <li><a href="projekcije.html">Projekcije</a></li>
+        <li><a href="galerija.html" class="active">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="novosti.html">Novosti</a></li>
+        <li><a href="rezervacija.html">Rezervacija</a></li>
+      </ul>
+    </nav>
+
+    <ul class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="image/slika 2.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-6" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
+        </div>
+      </li>
+      <input type="radio" name="radio-btn" id="img-2" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="image/marvel.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-3" class="next">&#x203a;</label>
+        </div>
+      </li>
+      <input type="radio" name="radio-btn" id="img-3" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="image/slika 4.png" />
+        </div>
+        <div class="nav">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-4" class="next">&#x203a;</label>
+        </div>
+      </li>
+      <input type="radio" name="radio-btn" id="img-4" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="image/slika.png" />
+        </div>
+        <div class="nav">
+          <label for="img-3" class="prev">&#x2039;</label>
+          <label for="img-5" class="next">&#x203a;</label>
+        </div>
+      </li>
+      <input type="radio" name="radio-btn" id="img-5" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="image/slika 3.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-4" class="prev">&#x2039;</label>
+          <label for="img-6" class="next">&#x203a;</label>
+        </div>
+      </li>
+      <input type="radio" name="radio-btn" id="img-6" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="image/arkadne igre2.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-5" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+      </li>
+    </ul>
+
+    <script>
+      function openmNavSlide() {
+        document.getElementById("mNavSlide").style.width = "250px";
+      }
+
+      function closemNavSlide() {
+        document.getElementById("mNavSlide").style.width = "0";
+      }
+    </script>
+
+  </body>
+  <footer>
+    <h5>Copyright © Nemanja Stojanov</h5>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/nemanja.stojanov.3/"
+        ><i class="fab fa-facebook-square fa-2x"></i
+      ></a>
+      <a href="https://www.instagram.com/nemanja_s001/"
+        ><i class="fab fa-instagram fa-2x"></i
+      ></a>
+      <a href="https://twitter.com/nemanja21x"
+        ><i class="fab fa-twitter-square fa-2x"></i
+      ></a>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="srb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="author" content="Nemanja Stojanov" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Bioskop <span class="logo2">FilmaxX</span></div>
+    </header>
+
+    <a href="javascript:void()" class="openbtn" onclick="openmNavSlide()"
+        ><i class="mmenu fas fa-bars"></i
+      ></a>
+    </header>
+    <div id="mNavSlide" class="mnav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closemNavSlide()"
+        ><i class="fas fa-times"></i
+      ></a>
+      <a href="index.html">Početna strana</a>
+      <a href="projekcije.html">Projekcije</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="kontakt.html"  class="active">Kontakt</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="rezervacija.html">Rezervacija</a>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Početna strana</a></li>
+        <li><a href="projekcije.html">Projekcije</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        <li><a href="novosti.html">Novosti</a></li>
+        <li><a href="rezervacija.html">Rezervacija</a></li>
+      </ul>
+    </nav>
+    
+    <div class="content wrapper">
+      <div class="kontakt">
+      <h1>Kontakt</h1>
+      <form>
+         <div>
+             <label for="imeprezime">Ime i prezime</label>
+            <input type="text" id="imeprezime" placeholder="Ime i prezime">
+          </div>
+          <div>
+            <label for="email">E-mail adresa</label>
+            <input type="text" id="email" placeholder="Email">
+          </div>
+          <div>
+            <label for="telefon">Telefon</label>
+            <input type="text" id="telefon" placeholder="Telefon">
+          </div>
+          <div>
+            <label for="poruka">Pitanje</label>
+            <textarea id="poruka" rows="6" placeholder="Vaše pitanje ovde."></textarea>
+          </div>
+    
+         <input type="submit" value="Pošalji"></input>
+      </form>
+      </div>
+    </div>
+
+    <script>
+      function openmNavSlide() {
+        document.getElementById("mNavSlide").style.width = "250px";
+      }
+
+      function closemNavSlide() {
+        document.getElementById("mNavSlide").style.width = "0";
+      }
+    </script>
+
+  </body>
+  <footer>
+    <h5>Copyright © Nemanja Stojanov</h5>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/nemanja.stojanov.3/"
+        ><i class="fab fa-facebook-square fa-2x"></i
+      ></a>
+      <a href="https://www.instagram.com/nemanja_s001/"
+        ><i class="fab fa-instagram fa-2x"></i
+      ></a>
+      <a href="https://twitter.com/nemanja21x"
+        ><i class="fab fa-twitter-square fa-2x"></i
+      ></a>
+    </div>
+  </footer>
+</html>

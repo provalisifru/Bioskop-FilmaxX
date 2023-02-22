@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="srb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="author" content="Nemanja Stojanov" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Bioskop <span class="logo2">FilmaxX</span></div>
+      <a href="javascript:void()" class="openbtn" onclick="openmNavSlide()"
+        ><i class="mmenu fas fa-bars"></i
+      ></a>
+    </header>
+    <div id="mNavSlide" class="mnav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closemNavSlide()"
+        ><i class="fas fa-times"></i
+      ></a>
+      <a href="index.html" class="active">Početna strana</a>
+      <a href="projekcije.html">Projekcije</a>
+      <a href="galerija.html">Galerija</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="novosti.html">Novosti</a>
+      <a href="rezervacija.html">Rezervacija</a>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Početna strana</a></li>
+        <li><a href="projekcije.html">Projekcije</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="novosti.html">Novosti</a></li>
+        <li><a href="rezervacija.html">Rezervacija</a></li>
+      </ul>
+    </nav>
+    <img class="banner" src="image/banner.jpg" alt="banner" />
+    <div class="opis wrapper">
+      Dobrodošli na stranicu bioskopa FilmaxX! Na sajtu možete videti koji će
+      filmovi imati projekciju, kada će se dogoditi i naravno, da rezervišete
+      svoje mesto!
+      <br />
+      <br />
+      Bioskop FilmaxX , nalazi se u Beogradu u ulici Vojvode Stepe na mestu
+      starog bioskopa Voždovca. Zauzimajući prostor od čak 940m<sup>2</sup>,
+      krasi nas i hol sa biletarnicom i i arkadnim video-igrama na žetone u
+      uglu, kao i velika sala koja ima kapacitet da primi 740 ljudi. Bioskop
+      radi od 2020. godine i trudimo se da budemo među prvima kada su u pitanju
+      novi filmovi.
+      <br /><br />
+      Na strani projekcije možete videti koji filmovi će biti projektovani, a na
+      strani rezervacija možete rezervisati svoje mesto za projekciju koju
+      želite, vidimo se!
+      <br /><br />
+      Ukoliko imate bilo kakvo pitanje, slobodno nas kontaktirajte
+      <a class="ovde" href="kontakt.html">OVDE</a>.
+      <br />
+      <br />
+    </div>
+
+    <script>
+      function openmNavSlide() {
+        document.getElementById("mNavSlide").style.width = "250px";
+      }
+
+      function closemNavSlide() {
+        document.getElementById("mNavSlide").style.width = "0";
+      }
+    </script>
+  </body>
+  <footer>
+    <h5>Copyright © Nemanja Stojanov</h5>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/nemanja.stojanov.3/"
+        ><i class="fab fa-facebook-square fa-2x"></i
+      ></a>
+      <a href="https://www.instagram.com/nemanja_s001/"
+        ><i class="fab fa-instagram fa-2x"></i
+      ></a>
+      <a href="https://twitter.com/nemanja21x"
+        ><i class="fab fa-twitter-square fa-2x"></i
+      ></a>
+    </div>
+  </footer>
+</html>
